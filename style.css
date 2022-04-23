@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+   
+}
+
+.loader-wraper{
+    width: 60px;
+    height: 60px;
+    
+}
+.loader{
+    box-sizing: border-box;
+    border: 10px solid #162534;
+    height: 100px;
+    width: 100px;
+    border-top-color: #4bc8eb;
+    border-bottom-color: #f13ad6;
+    border-radius: 50%;
+    animation:rotate 5s linear infinite;
+    
+}
+.loader-inner{
+    box-sizing: border-box;
+    border: 7px solid #162534;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border-top-color: #369d16;
+    border-bottom-color: #f0f8ff;
+    animation:move 5s linear infinite;
+    animation-duration: 2.5s;
+}
+@keyframes move{
+    0%{
+        transform: scale(1) rotate(-360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(-360deg);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: scale(1) rotate(360deg);
+    }
+    50%{
+        transform: scale(.8) rotate(-360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
